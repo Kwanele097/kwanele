@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    color:white;
+   
+  }
+  .navbar-links ul{
+margin:0; padding: 0;
+display: flex;
+  }
+  .navbar-links li{
+    list-style: none;
+  }
+  .navbar-links li a{
+    text-decoration:none;
+    display: block;
+    color: white;
+    padding: 1rem;
+   margin:10px 10px 10px 5px;
+   text-align: right;
+     }
+     
+     
+     
+    body{
+        background-color: blueviolet;
+    } 
+
+    .wrapper{
+            display: grid;
+           grid-template-columns: 1fr 2fr 1fr;
+            border: solid;
+          /*  grid-column-gap:1em;
+           row-gap:1em ;*/
+         /*  grid-auto-rows: 100px;*/
+         grid-auto-rows: minmax(100px auto);
+         margin-top: 20px;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="#About">About</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+</html>
